@@ -15,4 +15,11 @@ public class Pizza {
         this.toppings = new ArrayList<>(toppings);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Size: ").append(size.toString().toLowerCase()).append("\nDough: ").append(doughType.toString().toLowerCase()).append("\nToppings:");
+        toppings.forEach(t -> sb.append("\n  - ").append(t));
+        return sb.toString();
+    }
 }
