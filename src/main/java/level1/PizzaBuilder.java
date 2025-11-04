@@ -3,25 +3,13 @@ package level1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PizzaBuilder {
+public interface PizzaBuilder {
 
-    private PizzaSize size;
-    private PizzaDoughType doughType;
-    private List<String> toppings = new ArrayList<>();
+    void setSize(PizzaSize size);
 
-    public void setSize(PizzaSize size) {
-        this.size = size;
-    }
+    void setDoughType(PizzaDoughType doughType);
 
-    public void setDoughType(PizzaDoughType doughType) {
-        this.doughType = doughType;
-    }
+    void setToppings();
 
-    public void setToppings(List<String> toppings) {
-        this.toppings = new ArrayList<>(toppings);
-    }
-
-    public Pizza getResult() {
-        return new Pizza(size, doughType, toppings);
-    }
+    Pizza getResult();
 }
