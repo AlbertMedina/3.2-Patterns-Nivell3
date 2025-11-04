@@ -20,8 +20,8 @@ public class VegetarianPizzaBuilder implements PizzaBuilder {
     }
 
     @Override
-    public void setToppings() {
-        this.toppings = List.of("tomato", "mozzarella", "mushrooms", "vegetables");
+    public void setToppings(List<String> toppings) {
+        this.toppings = toppings;
     }
 
     @Override

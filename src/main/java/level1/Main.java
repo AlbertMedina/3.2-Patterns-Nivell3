@@ -5,16 +5,18 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        PizzaBuilder prosciuttoPizzaBuilder = new ProsciuttoPizzaBuilder();
-        prosciuttoPizzaBuilder.setSize(PizzaSize.LARGE);
-        prosciuttoPizzaBuilder.setDoughType(PizzaDoughType.THICK);
+        PizzaChef pizzaChef = new PizzaChef();
 
-        PizzaBuilder hawaiianPizzaBuilder = new HawaiianPizzaBuilder();
-        hawaiianPizzaBuilder.setSize(PizzaSize.MEDIUM);
-        hawaiianPizzaBuilder.setDoughType(PizzaDoughType.THIN);
+        ProsciuttoPizzaBuilder prosciuttoPizzaBuilder = new ProsciuttoPizzaBuilder();
+        pizzaChef.buildProsciuttoPizza(prosciuttoPizzaBuilder);
+        System.out.println(prosciuttoPizzaBuilder.getResult());
 
-        PizzaBuilder vegetarianPizzaBuilder = new VegetarianPizzaBuilder();
-        vegetarianPizzaBuilder.setSize(PizzaSize.SMALL);
-        vegetarianPizzaBuilder.setDoughType(PizzaDoughType.NEAPOLITAN);
+        HawaiianPizzaBuilder hawaiianPizzaBuilder = new HawaiianPizzaBuilder();
+        pizzaChef.buildHawaiianPizza(hawaiianPizzaBuilder);
+        System.out.println(hawaiianPizzaBuilder.getResult());
+
+        VegetarianPizzaBuilder vegetarianPizzaBuilder = new VegetarianPizzaBuilder();
+        pizzaChef.buildVegetarianPizza(vegetarianPizzaBuilder);
+        System.out.println(vegetarianPizzaBuilder.getResult());
     }
 }

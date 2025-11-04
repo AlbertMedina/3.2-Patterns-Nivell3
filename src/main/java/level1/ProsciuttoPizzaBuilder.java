@@ -20,8 +20,8 @@ public class ProsciuttoPizzaBuilder implements PizzaBuilder {
     }
 
     @Override
-    public void setToppings() {
-        this.toppings = List.of("tomato", "mozzarella", "ham");
+    public void setToppings(List<String> toppings) {
+        this.toppings = toppings;
     }
 
     @Override
