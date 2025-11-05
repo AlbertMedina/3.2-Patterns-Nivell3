@@ -11,7 +11,7 @@ public class HawaiianPizzaBuilder implements PizzaBuilder {
 
     private PizzaSize size;
     private PizzaDoughType doughType;
-    private List<String> toppings = new ArrayList<>();
+    private final List<String> toppings = new ArrayList<>();
 
     @Override
     public HawaiianPizzaBuilder setSize(PizzaSize size) {
@@ -26,8 +26,8 @@ public class HawaiianPizzaBuilder implements PizzaBuilder {
     }
 
     @Override
-    public HawaiianPizzaBuilder setToppings(List<String> toppings) {
-        this.toppings = toppings;
+    public HawaiianPizzaBuilder addTopping(String topping) {
+        toppings.add(topping);
         return this;
     }
 

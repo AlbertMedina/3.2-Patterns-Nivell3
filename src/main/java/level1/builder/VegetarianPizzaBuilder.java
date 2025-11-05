@@ -11,7 +11,7 @@ public class VegetarianPizzaBuilder implements PizzaBuilder {
 
     private PizzaSize size;
     private PizzaDoughType doughType;
-    private List<String> toppings = new ArrayList<>();
+    private final List<String> toppings = new ArrayList<>();
 
     @Override
     public VegetarianPizzaBuilder setSize(PizzaSize size) {
@@ -26,8 +26,8 @@ public class VegetarianPizzaBuilder implements PizzaBuilder {
     }
 
     @Override
-    public VegetarianPizzaBuilder setToppings(List<String> toppings) {
-        this.toppings = toppings;
+    public VegetarianPizzaBuilder addTopping(String topping) {
+        toppings.add(topping);
         return this;
     }
 
