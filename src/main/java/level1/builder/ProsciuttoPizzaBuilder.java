@@ -1,4 +1,8 @@
-package level1;
+package level1.builder;
+
+import level1.pizza.Pizza;
+import level1.pizza.PizzaDoughType;
+import level1.pizza.PizzaSize;
 
 import java.util.ArrayList;
 import java.util.List;

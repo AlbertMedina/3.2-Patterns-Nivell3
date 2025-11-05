@@ -1,4 +1,4 @@
-package level1;
+package level1.pizza;
 
 public enum PizzaSize {
     SMALL, MEDIUM, LARGE;
