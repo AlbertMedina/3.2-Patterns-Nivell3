@@ -14,18 +14,21 @@ public class ProsciuttoPizzaBuilder implements PizzaBuilder {
     private List<String> toppings = new ArrayList<>();
 
     @Override
-    public void setSize(PizzaSize size) {
+    public ProsciuttoPizzaBuilder setSize(PizzaSize size) {
         this.size = size;
+        return this;
     }
 
     @Override
-    public void setDoughType(PizzaDoughType doughType) {
+    public ProsciuttoPizzaBuilder setDoughType(PizzaDoughType doughType) {
         this.doughType = doughType;
+        return this;
     }
 
     @Override
-    public void setToppings(List<String> toppings) {
+    public ProsciuttoPizzaBuilder setToppings(List<String> toppings) {
         this.toppings = toppings;
+        return this;
     }
 
     @Override
