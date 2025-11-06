@@ -1,5 +1,11 @@
 package level3;
 
+import level3.gateway.PaymentGateway;
+import level3.payment.BankAccountPayment;
+import level3.payment.CreditCardPayment;
+import level3.payment.PaypalPayment;
+import level3.store.ShoeStore;
+
 public class Main {
     public static void main(String[] args) {
 

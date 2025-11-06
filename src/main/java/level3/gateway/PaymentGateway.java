@@ -1,4 +1,6 @@
-package level3;
+package level3.gateway;
+
+import level3.payment.Payment;
 
 public class PaymentGateway {
 
