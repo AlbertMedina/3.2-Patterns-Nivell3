@@ -33,6 +33,6 @@ public class ProsciuttoPizzaBuilder implements PizzaBuilder {
 
     @Override
     public Pizza build() {
-        return new Pizza(size, doughType, toppings);
+        return new Pizza("prosciutto", size, doughType, toppings);
     }
 }

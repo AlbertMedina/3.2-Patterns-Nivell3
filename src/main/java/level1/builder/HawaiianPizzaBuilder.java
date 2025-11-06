@@ -33,6 +33,6 @@ public class HawaiianPizzaBuilder implements PizzaBuilder {
 
     @Override
     public Pizza build() {
-        return new Pizza(size, doughType, toppings);
+        return new Pizza("hawaiian", size, doughType, toppings);
     }
 }
