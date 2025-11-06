@@ -9,7 +9,7 @@ public class ShoeStore {
     }
 
     public void buyShoes(double price, Payment payment) {
-        System.out.println("Buying shoes");
+        System.out.println("Buying shoes for " + price + "€");
         paymentGateway.pay(price, payment);
         System.out.println("Purchase completed");
     }
