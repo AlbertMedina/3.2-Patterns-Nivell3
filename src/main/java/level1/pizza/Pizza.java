@@ -17,6 +17,10 @@ public class Pizza {
         this.toppings = new ArrayList<>(toppings);
     }
 
+    public String getName() {
+        return name;
+    }
+
     public PizzaSize getSize() {
         return size;
     }
