@@ -1,9 +1,9 @@
 package level3;
 
-public class CreditCardPayment implements Callback {
+public class CreditCardPayment implements Payment {
 
     @Override
-    public void call() {
-        System.out.println("Paying with credit card");
+    public void pay(double amount) {
+        System.out.println("Paying " + amount + "€ with credit card");
     }
 }

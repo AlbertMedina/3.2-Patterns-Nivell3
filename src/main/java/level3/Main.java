@@ -6,10 +6,10 @@ public class Main {
         PaymentGateway paymentGateway = new PaymentGateway();
         ShoeStore shoeStore = new ShoeStore(paymentGateway);
 
-        shoeStore.buyShoes(new CreditCardPayment());
+        shoeStore.buyShoes(49.99, new CreditCardPayment());
         System.out.println("-------------------------------");
-        shoeStore.buyShoes(new PaypalPayment());
+        shoeStore.buyShoes(79.99, new PaypalPayment());
         System.out.println("-------------------------------");
-        shoeStore.buyShoes(new BankAccountPayment());
+        shoeStore.buyShoes(99.99, new BankAccountPayment());
     }
 }

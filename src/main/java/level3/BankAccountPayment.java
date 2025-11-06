@@ -1,9 +1,9 @@
 package level3;
 
-public class BankAccountPayment implements Callback {
+public class BankAccountPayment implements Payment {
 
     @Override
-    public void call() {
-        System.out.println("Paying with bank account");
+    public void pay(double amount) {
+        System.out.println("Paying " + amount + "€ with bank account");
     }
 }

@@ -2,9 +2,9 @@ package level3;
 
 public class PaymentGateway {
 
-    public void pay(Callback payment) {
+    public void pay(double price, Payment payment) {
         System.out.println("Processing payment...");
-        payment.call();
+        payment.pay(price);
         System.out.println("Payment completed");
     }
 }

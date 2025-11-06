@@ -8,9 +8,9 @@ public class ShoeStore {
         this.paymentGateway = paymentGateway;
     }
 
-    public void buyShoes(Callback payment) {
+    public void buyShoes(double price, Payment payment) {
         System.out.println("Buying shoes");
-        paymentGateway.pay(payment);
+        paymentGateway.pay(price, payment);
         System.out.println("Purchase completed");
     }
 }

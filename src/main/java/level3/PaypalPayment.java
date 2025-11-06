@@ -1,9 +1,9 @@
 package level3;
 
-public class PaypalPayment implements Callback {
+public class PaypalPayment implements Payment {
 
     @Override
-    public void call() {
-        System.out.println("Paying with Paypal");
+    public void pay(double amount) {
+        System.out.println("Paying " + amount + "€ with Paypal");
     }
 }
